@@ -1,0 +1,37 @@
+
+.cartIcon{
+    cursor: pointer;
+    z-index: 999;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 2px;
+}
+.overlay{
+    position: absolute;
+    width: 100vw;
+    background: #00000099;
+    height: 100vh;
+    transition: all .3s;
+}
+dialog{
+    border-radius: 10px;
+    transition: all .3s;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #666666fe;
+    max-width: 60%;
+    min-height: 88vh;
+    width: 100%;
+    margin: 0;
+    left: 100%;
+    top: 37px;
+
+    label{
+        width: 100%;
+        display: flex;
+        color: #343434;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Header from './Components/Header';
 function App() {
 const [items, setItems] = useState([]);
 const [newItem, setNewItem] = useState('');
@@ -14,6 +15,7 @@ setItems(updatedItems);
 };
 return (
 <div className="App">
+<Header/>
 <h1>Carrinho de Compras</h1>
 <div className="container">
 <input
