@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { GlobalStorage } from './GlobalContext/GlobalContext';
-import './index.css';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-ReactDOM.render(
-<React.StrictMode>
-    <GlobalStorage>
-        <App />
-    </GlobalStorage>
-</React.StrictMode>,
-document.getElementById('root')
+import './index.css';
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
+    <React.StrictMode>
+        <GlobalStorage>
+            <App />
+        </GlobalStorage>
+    </React.StrictMode>
 );

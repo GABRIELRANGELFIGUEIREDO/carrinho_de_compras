@@ -6,6 +6,7 @@ import Product from './Components/Product';
 function App() {
     const {
         products,
+        setProducts,
         productsCart,
         setProductsCart,
     } = React.useContext(GlobalContext)
@@ -17,8 +18,11 @@ return (
                 return (<Product
                     key={product.id}
                     id={product.id}
+                    qty={product.quantity}
+                    products={products}
+                    setProducts={setProducts}
                     productsCart={productsCart}
-                    productName={product.name}
+                    productName={product.productName}
                     setProductsCart={setProductsCart}
                     />)
             })}
