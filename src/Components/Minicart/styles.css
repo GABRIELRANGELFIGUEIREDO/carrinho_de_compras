@@ -7,25 +7,17 @@
     border-radius: 10px;
     margin: 2px;
 }
-.overlay{
-    position: absolute;
-    width: 100vw;
-    background: #00000099;
-    height: 100vh;
-    transition: all .3s;
-}
+
 dialog{
     border-radius: 10px;
     transition: all .3s;
     border: none;
     box-shadow: 1px 1px 3px 1px #666666fe;
-    max-width: 60%;
+    max-width: 320px;
     min-height: 88vh;
     width: 100%;
-    margin: 0;
-    left: 100%;
-    top: 37px;
-
+    margin: 0 10px 0 auto;
+    z-index: 1;
     label{
         width: 100%;
         display: flex;
@@ -34,4 +26,15 @@ dialog{
         font-weight: 700;
         margin-bottom: 50px;
     }
+}
+.productName{
+   min-width: 100px; 
+   font-weight:600;
+}
+.removeBtn{
+    display: grid;
+    place-content: center;
+    cursor:pointer;
+    height:40px;
+    width:40px;
 }
